@@ -30,7 +30,7 @@ public:
     }
     void addToFacts(Predicate newPredicate) {
         factList.push_back(newPredicate);
-        for (int i = 0; i < newPredicate.getVector().size(); i++) {
+        for (unsigned int i = 0; i < newPredicate.getVector().size(); i++) {
             domainList.insert(newPredicate.getVector()[i].toString());
         }
     }
@@ -66,19 +66,19 @@ public:
         stringstream output;
         output << "Success!" << endl;
         output << "Schemes(" << schemeList.size() << "):" << endl;
-        for (int i = 0; i < schemeList.size(); i++) {
+        for (unsigned int i = 0; i < schemeList.size(); i++) {
             output << "  " << schemeList[i].toString() << endl;
         }
         output << "Facts(" << factList.size() << "):" << endl;
-        for (int i = 0; i < factList.size(); i++) {
+        for (unsigned int i = 0; i < factList.size(); i++) {
             output << "  " << factList[i].toString() << "." << endl;
         }
         output << "Rules(" << ruleList.size() << "):" << endl;
-        for (int i = 0; i < ruleList.size(); i++) {
+        for (unsigned int i = 0; i < ruleList.size(); i++) {
             output << "  " << ruleList[i].toString() << "." << endl;
         }
         output << "Queries(" << queryList.size() << "):" << endl;
-        for (int i = 0; i < queryList.size(); i++) {
+        for (unsigned int i = 0; i < queryList.size(); i++) {
             output << "  " << queryList[i].toString() << "?" << endl;
         }
         output << "Domain(" << domainList.size() << "):" << endl;
