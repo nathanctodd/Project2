@@ -45,7 +45,7 @@ class Predicate {
        stringstream output;
        output << this->name << "(";
        output << parameters[0].toString();
-       for(int i = 1; i < parameters.size(); i++) {
+       for(unsigned int i = 1; i < parameters.size(); i++) {
             output << "," << parameters[i].toString();
        }
        output << ")";

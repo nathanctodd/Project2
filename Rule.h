@@ -52,7 +52,7 @@ class Rule {
         output << headPredicate.toString();
         output << " :- ";
         output << predicateList[0].toString();
-        for (int i = 1; i < predicateList.size(); i++) {
+        for (unsigned int i = 1; i < predicateList.size(); i++) {
             output << "," << predicateList[i].toString();
         }
         return output.str();
