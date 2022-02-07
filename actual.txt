@@ -1,0 +1,6 @@
+Success!
+Schemes(0):
+Facts(0):
+Rules(0):
+Queries(0):
+Domain(0):
